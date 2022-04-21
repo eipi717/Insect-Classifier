@@ -1,0 +1,5 @@
+keras==2.6.0
+matplotlib==3.5.1
+numpy==1.19.2
+Pillow==9.1.0
+PyQt5==5.15.6
