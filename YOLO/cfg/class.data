@@ -1,5 +1,0 @@
-classes= 10
-train  = /Users/nicholas717/Downloads/FYP9Apr/code/YOLO/cfg/train.txt
-valid  = /Users/nicholas717/Downloads/FYP9Apr/code/YOLO/cfg/test.txt
-names = /Users/nicholas717/Downloads/FYP9Apr/code/YOLO/cfg/class.names
-backup = /Users/nicholas717/Downloads/FYP9Apr/code/YOLO/cfg/weights
