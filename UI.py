@@ -4,7 +4,6 @@ from PyQt5.QtGui import QPixmap
 from PyQt5.QtCore import Qt
 
 from Classification import Classifier
-from YOLOv4 import YOLOLocaliser
 
 from TextandLinks import pestcontrolURL
 from TextandLinks import handling_method
@@ -58,13 +57,12 @@ class MainWindow(QMainWindow):
             msg.exec_()
             return True
 
-        # Execute YOLO
-        YOLOLocaliser(self.img_path)
+        # Classify
         result = Classifier(self.img_path)
-        YOLOResult_dir = './predictions.jpg'
+       
 
-        # Display YOLO's prediction
-        pixmap = QPixmap(YOLOResult_dir)
+        # Display prediction
+        pixmap = QPixmap(self.img_path)
         pixmap2 = pixmap.scaled(750, 350, Qt.KeepAspectRatio)
         self.label.setPixmap(pixmap2)
         self.label.adjustSize()
