@@ -32,4 +32,9 @@ The overall accuracy is enhanced:
   1. InsectNet: 75%, stopped at 63 epochs out of 300
   2. Xception:  87%, stopped at 71 epochs out of 300
 
+Install the required package
+
+```
+pip install -r requirements.txt
+```
 
