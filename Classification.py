@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import keras
 from PIL import Image
 
+# Abs. path needed
 model = keras.models.load_model("../Model/Xception.h5")
 
 labels = [
